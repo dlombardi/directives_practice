@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Active Highlight Directive</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Active Highlight Directive</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body ng-app="directives_practice">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
-</body>
+    <div>
+      <ul auto-highlight highlight-class-name="active">
+        <li><a href="#/work">Work</a></li>
+        <li><a href="#/home">Home</a></li>
+        <li><a href="#/about">About</a></li>
+      </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="directives/auto-highlight.js"></script>
+  </body>
 </html>
